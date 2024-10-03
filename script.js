@@ -95,7 +95,7 @@ function respostaSelecionada(opcaoSelecionada) {
 }
 
 function mostraResultado() {
-    caixaPerguntas.textContent = "Em 2049...";
+    caixaPerguntas.textContent = "O desflorestamento afeta tanto o clima quando a biodiversidade e causado por uma variedade de fatores. Sua solução exige um equilibrio entre politicas publicas e conscientização social alem de medidas que combinem preservação e recuperação ambiental. A reflexão sobre o tema nos lembra do importancia de agir para garantir um futuro sustentavel.";
     textoResultado.textContent = historiaFinal;
     caixaAlternativas.textContent = "";
 }
