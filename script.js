@@ -6,62 +6,58 @@ const textoResultado = document.querySelector(".texto-resultado");
 
 const perguntas = [
     {
-        enunciado: "Voçê acha que o desflorestamento e mais causado por atividades agricolas ou industriais?",
+        enunciado: "1. Você acha que o desflorestamento é mais causado por atividades agrícolas ou industriais?",
         alternativas: [
             {
-                texto: "Atividades agricolas",
+                texto: "Atividades agrícolas",
+                afirmacao: "Você acredita que a agricultura é a principal causa do desflorestamento. "
             },
             {
-                texto: "Atividades Industriais",
+                texto: "Atividades industriais",
+                afirmacao: "Você acredita que as atividades industriais são a principal causa do desflorestamento. "
             }
         ]
     },
     {
-        enunciado: "Na sua opinião o desflorestamento tem mais impacto na biodiversidade ou clima?",
+        enunciado: "2. Na sua opinião, o desflorestamento tem mais impacto na biodiversidade ou no clima?",
         alternativas: [
             {
-                texto: "Biodiversidade.",
+                texto: "Biodiversidade",
+                afirmacao: "Você considera que a perda de biodiversidade é o maior impacto do desflorestamento. "
             },
             {
-                texto: "Clima.",
+                texto: "Clima",
+                afirmacao: "Você considera que as mudanças climáticas são o maior impacto do desflorestamento. "
             }
         ]
     },
     {
-        enunciado: "Voçê acredita que a solução para o desflorestamento está mais ligada a politicas governamentais ou a conscientização da população?",
+        enunciado: "3. Você acredita que a solução para o desflorestamento está mais ligada a políticas governamentais ou à conscientização da população?",
         alternativas: [
             {
-                texto: "Politicas governamentais.",
+                texto: "Políticas governamentais",
+                afirmacao: "Você acredita que políticas governamentais são a chave para resolver o desflorestamento. "
             },
             {
-                texto: "Conscientização da população.",
+                texto: "Conscientização da população",
+                afirmacao: "Você acredita que a conscientização da população é essencial para resolver o desflorestamento. "
             }
         ]
     },
     {
-        enunciado: "Na sua perspectiva o combate ao desflorestamento deveria priorizar a preservação de florestas existententes ou reflorestamento de areas degradadas",
+        enunciado: "4. Na sua perspectiva, o combate ao desflorestamento deveria priorizar a preservação de florestas existentes ou o reflorestamento de áreas degradadas?",
         alternativas: [
             {
                 texto: "Preservação de florestas existentes",
+                afirmacao: "Você acredita que é mais importante preservar as florestas existentes. "
             },
             {
-                texto: "Reflorestamento de areas degradadas",
+                texto: "Reflorestamento de áreas degradadas",
+                afirmacao: "Você acredita que o reflorestamento de áreas degradadas deve ser a prioridade. "
             }
         ]
-    },
-    {
-        enunciado: "Você tem um trabalho em grupo de biologia para entregar na semana seguinte, o andamento do trabalho está um pouco atrasado e uma pessoa do seu grupo decidiu fazer com ajuda da IA. O problema é que o trabalho está totalmente igual ao do chat. O que você faz? ",
-        alternativas: [
-            {
-                texto: "Escrever comandos para o chat é uma forma de contribuir com o trabalho, por isso não é um problema utilizar o texto inteiro.",
-            },
-            {
-                texto: "O chat pode ser uma tecnologia muito avançada, mas é preciso manter a atenção pois toda máquina erra, por isso revisar o trabalho e contribuir com as perspectivas pessoais é essencial.",
-            }
-        ]
-    },
+    }
 ];
-
 
 let atual = 0;
 let perguntaAtual;
@@ -95,7 +91,7 @@ function respostaSelecionada(opcaoSelecionada) {
 }
 
 function mostraResultado() {
-    caixaPerguntas.textContent = "O desflorestamento afeta tanto o clima quando a biodiversidade e causado por uma variedade de fatores. Sua solução exige um equilibrio entre politicas publicas e conscientização social alem de medidas que combinem preservação e recuperação ambiental. A reflexão sobre o tema nos lembra do importancia de agir para garantir um futuro sustentavel.";
+    caixaPerguntas.textContent = "Conclusão:";
     textoResultado.textContent = historiaFinal;
     caixaAlternativas.textContent = "";
 }
