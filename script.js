@@ -43,8 +43,10 @@ const perguntas = [
         alternativas: [
             {
                 texto: "Criar uma imagem utilizando uma plataforma de design como o Paint.",
+            }
             {
                 texto: "Criar uma imagem utilizando um gerador de imagem de IA.",
+            }
         ]
     },
     {
