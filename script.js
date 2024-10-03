@@ -43,7 +43,7 @@ const perguntas = [
         alternativas: [
             {
                 texto: "Preservação de florestas existentes",
-            }
+            },
             {
                 texto: "Reflorestamento de areas degradadas",
             }
